@@ -9,7 +9,8 @@ function App() {
       <Router>
         <Routes>
 
-          <Route path="/admin/dashboard" element={<MasterLayout/>} />
+          <Route path="/admin" name="Admin" render={(props)=><MasterLayout {...props}/>} />
+          
 
         </Routes>
       </Router>
